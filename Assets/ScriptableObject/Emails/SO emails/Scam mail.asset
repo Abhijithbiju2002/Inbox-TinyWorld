@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3baa1fa206bead43928e2e3b41aac69, type: 3}
   m_Name: Scam mail
   m_EditorClassIdentifier: 
-  sender: 
-  sender_mailID: 
-  subject: 
-  message: 
+  sender: Scamer
+  sender_mailID: scamer@gmail.com
+  subject: you want to be rich??
+  message: ssssssrugfhfdhhg ssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhgssssssrugfhfdhhg
   risk_level: 0
   category: 2
   moneyEffect: 0
