@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3baa1fa206bead43928e2e3b41aac69, type: 3}
   m_Name: Lottery Mail
   m_EditorClassIdentifier: 
-  sender: 
-  sender_mailID: 
-  subject: 
-  message: 
+  sender: LuckyDraw
+  sender_mailID: luucky@yahooo.com
+  subject: You might win some money
+  message: chances are 50 - 50
   risk_level: 1
   category: 5
   moneyEffect: 0
