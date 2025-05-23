@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class EmailCardUI : MonoBehaviour, IPointerClickHandler
 {
@@ -9,17 +10,22 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
     [SerializeField] TextMeshProUGUI subjectText;
     [SerializeField] EmailPanelText EmailPanelText;
     [SerializeField] GameObject contentRoot;
+    [SerializeField] Image button;
+
+    bool isOpened = false;
+
     //[SerializeField] Button EmailButton;
 
 
     public void Setup(EmailData data)
     {
-        emailData = data;
+        data = emailData;
+
+        senderText.text = emailData.GetSender();
+        subjectText.text = emailData.GetSubject();
+        isOpened = false;
 
 
-
-        senderText.text = data.GetSender();
-        subjectText.text = data.GetSubject();
 
 
     }
@@ -32,8 +38,23 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
         if (EmailPanelText != null)
         {
             EmailPanelText.ShowEmail(emailData);
+            OpenEmail();
+
         }
 
+    }
+    void OpenEmail()
+    {
+        isOpened = true;
+        UpdateVisual();
+
+    }
+    void UpdateVisual()
+    {
+        if (button != null)
+        {
+            button.color = isOpened ? new Color(0.65f, 0.65f, 0.65f) : Color.white;
+        }
     }
 
 
