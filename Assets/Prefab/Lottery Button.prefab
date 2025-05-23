@@ -297,6 +297,8 @@ MonoBehaviour:
   emailData: {fileID: 11400000, guid: 22ed0aaf46b088d45b0b77695252ec0b, type: 2}
   senderText: {fileID: 7547084960599944401}
   subjectText: {fileID: 2032469211623645143}
+  EmailPanelText: {fileID: 0}
+  EmailButton: {fileID: 1268555074707307288}
 --- !u!1 &7955096488191266428
 GameObject:
   m_ObjectHideFlags: 0

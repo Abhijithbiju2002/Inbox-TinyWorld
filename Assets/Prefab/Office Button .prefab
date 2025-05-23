@@ -27,7 +27,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239552117419878002}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -163,6 +163,8 @@ MonoBehaviour:
   emailData: {fileID: 11400000, guid: f2b4ef019304ecf4abbb731232a56b35, type: 2}
   senderText: {fileID: 5345609075064975304}
   subjectText: {fileID: 2741778755923609550}
+  EmailPanelText: {fileID: 0}
+  EmailButton: {fileID: 6594253356724233394}
 --- !u!1 &4358256352612346166
 GameObject:
   m_ObjectHideFlags: 0

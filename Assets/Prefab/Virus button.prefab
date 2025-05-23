@@ -506,3 +506,5 @@ MonoBehaviour:
   emailData: {fileID: 11400000, guid: c2e91fb0f53673e4484848ceae54fae1, type: 2}
   senderText: {fileID: 7982427051270431652}
   subjectText: {fileID: 8780283476121322569}
+  EmailPanelText: {fileID: 0}
+  EmailButton: {fileID: 7436195152085321883}
