@@ -15,7 +15,7 @@ public class EmailInboxManager : MonoBehaviour
     [SerializeField] GameObject VirusEmailPrefab;
     [SerializeField] GameObject defaultprefab;
 
-    [SerializeField] int maxCountInbox = 20;
+    [SerializeField] int maxCountInbox = 12;
     private int remainingToSpawn;
 
     private void Start()
@@ -61,26 +61,37 @@ public class EmailInboxManager : MonoBehaviour
 
         for (int i = 0; i < count; i++)
         {
-            GameObject prefab = GetPrfabForCategory(EmailList[i].category);
-            GameObject card = Instantiate(prefab, inboxContentPanel);
+            SpawnEmailCard(shuffledList[i]);
+        }
+    }
+    void SpawnEmailCard(EmailData Data)
+    {
+        GameObject prefab = GetPrfabForCategory(Data.category);
+        GameObject card = Instantiate(prefab, inboxContentPanel);
 
-            EmailCardUI emailCardUI = card.GetComponent<EmailCardUI>();
-            if (emailCardUI != null)
-            {
-                emailCardUI.Setup(EmailList[i]);
-            }
+        EmailCardUI emailCardUI = card.GetComponent<EmailCardUI>();
+        if (emailCardUI != null)
+        {
+            emailCardUI.Setup(Data);
         }
     }
     public void OnEmailDeleted()
     {
-        StartCoroutine(SpawnNewEmailWithDelay(15f));
+
+        StartCoroutine(SpawnNewEmailWithDelay(5f));
     }
     IEnumerator SpawnNewEmailWithDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        if (inboxContentPanel.childCount < maxCountInbox)
-        {
-            GenerateInbox();
-        }
+        yield return null;
+        SpawnOneRandomEmail();
+    }
+    void SpawnOneRandomEmail()
+    {
+        Debug.Log("Inbox Count: " + inboxContentPanel.childCount);
+        if (inboxContentPanel.childCount >= maxCountInbox || EmailList.Count == 0) return;
+
+        EmailData randomEmail = EmailList[Random.Range(0, EmailList.Count)];
+        SpawnEmailCard(randomEmail);
     }
 }

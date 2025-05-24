@@ -12,6 +12,9 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
     [SerializeField] GameObject contentRoot;
     [SerializeField] Image button;
 
+    [SerializeField] EmailPanelText emailPanel;
+    [SerializeField] EmailInboxManager inboxManager;
+
     bool isOpened = false;
 
     //[SerializeField] Button EmailButton;
@@ -19,14 +22,13 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
 
     public void Setup(EmailData data)
     {
-        data = emailData;
+        emailData = data;
 
         senderText.text = emailData.GetSender();
         subjectText.text = emailData.GetSubject();
         isOpened = false;
 
-
-
+        UpdateVisual();
 
     }
     public void OnPointerClick(PointerEventData eventData)
@@ -35,17 +37,17 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
         {
             contentRoot.SetActive(false);
         }
-        if (EmailPanelText != null)
-        {
-            EmailPanelText.ShowEmail(emailData);
-            OpenEmail();
-
-        }
+        OpenEmail();
 
     }
     void OpenEmail()
     {
         isOpened = true;
+        if (emailPanel != null)
+        {
+            emailPanel.ShowEmail(emailData);
+            emailPanel.Initialize(inboxManager, gameObject); // Link back to this card
+        }
         UpdateVisual();
 
     }
@@ -56,6 +58,16 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
             button.color = isOpened ? new Color(0.65f, 0.65f, 0.65f) : Color.white;
         }
     }
+    public void ResetVisual()
+    {
+        isOpened = false;
+        UpdateVisual();
+    }
+    //public void OnClickOpenEmail()
+    //{
+    //     emailPanel.ShowEmail(emailData);                  // Show the data
+    //    emailPanel.Initialize(inboxManager, gameObject);  // Set manager and THIS card as linked
+    //}
 
 
 
