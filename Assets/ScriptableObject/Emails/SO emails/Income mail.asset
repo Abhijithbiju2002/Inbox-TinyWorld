@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3baa1fa206bead43928e2e3b41aac69, type: 3}
   m_Name: Income mail
   m_EditorClassIdentifier: 
-  sender: Salary
-  sender_mailID: ceo@company.co.in
-  subject: Income Slip
-  message: your monthly Salary of $10,000 will be added to your account after you
-    replay yes.
+  sender: HR Department
+  sender_mailID: payroll@company.com
+  subject: Your Monthly Salary Slip
+  message: Your payment has been processed. Press Confirm to receive it.
   risk_level: 2
   category: 4
   moneyEffect: 0

@@ -20,9 +20,12 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
     //[SerializeField] Button EmailButton;
 
 
-    public void Setup(EmailData data)
+    public void Setup(EmailData data, EmailInboxManager manager, EmailPanelText panel)
     {
-        emailData = data;
+        this.emailData = data;
+        this.inboxManager = manager;
+        this.emailPanel = panel;
+        this.emailPanel.Initialize(manager, gameObject);
 
         senderText.text = emailData.GetSender();
         subjectText.text = emailData.GetSubject();

@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 564.3, y: -28.1}
+  m_AnchoredPosition: {x: 631.7, y: -28.1}
   m_SizeDelta: {x: 715, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7468995826542152367
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hey Boss Need your APPROVAL ASAP!! '
+  m_text: Important Security Patch
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -231,6 +231,8 @@ MonoBehaviour:
   EmailPanelText: {fileID: 0}
   contentRoot: {fileID: 0}
   button: {fileID: 8868247316384119930}
+  emailPanel: {fileID: 0}
+  inboxManager: {fileID: 0}
 --- !u!1 &8015239188182755618
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +298,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Office Mail
+  m_text: IT Admin
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}

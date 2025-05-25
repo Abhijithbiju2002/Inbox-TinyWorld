@@ -12,20 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3baa1fa206bead43928e2e3b41aac69, type: 3}
   m_Name: Office mail
   m_EditorClassIdentifier: 
-  sender: Office Mail
-  sender_mailID: office@gmail.com.in
-  subject: Hey Boss Need your Approval ASAP!!
-  message: 'boss fdfsuyfagfkhdghdlgjdflgjdfigohugkjgnkrghgn jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjboss
-    fdfsuyfagfkhdghdlgjdflgjdfigohugkjgnkrghgn jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-    boss fdfsuyfagfkhdghdlgjdflgjdfigohugkjgnkrghgn jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-    boss fdfsuyfagfkhdghdlgjdflgjdfigohugkjgnkrghgn jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-    boss fdfsuyfagfkhdghdlgjdflgjdfigohugkjgnkrghgn jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-
-
-
-
-
-'
+  sender: Project Manager
+  sender_mailID: reports@company.com
+  subject: Monthly Report Submission
+  message: We need your report by EOD. Press Confirm to receive it.
   risk_level: 2
   category: 0
   moneyEffect: 0

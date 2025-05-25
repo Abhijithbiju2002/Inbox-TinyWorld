@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3baa1fa206bead43928e2e3b41aac69, type: 3}
   m_Name: Virus mail
   m_EditorClassIdentifier: 
-  sender: NotVirus
-  sender_mailID: pirate@gmail.cum
-  subject: safe to download
-  message: ur pc is goneee..bye bye
+  sender: IT Admin
+  sender_mailID: updates@system-protect.org
+  subject: Important Security Patch
+  message: Install now to stay safe. Press Confirm to receive it.
   risk_level: 0
   category: 3
   moneyEffect: 0

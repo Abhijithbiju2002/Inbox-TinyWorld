@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3baa1fa206bead43928e2e3b41aac69, type: 3}
   m_Name: Spam mail
   m_EditorClassIdentifier: 
-  sender: Spam
-  sender_mailID: spam@yahooo
-  subject: hey biro
-  message: fhffbfffffffffffffffffffffffffffgfdgdfgdfhffbfffffffffffffffffffffffffffgfdgdfgdfhffbfffffffffffffffffffffffffffgfdgdfgdfhffbfffffffffffffffffffffffffffgfdgdfgdfhffbfffffffffffffffffffffffffffgfdgdfgdfhffbfffffffffffffffffffffffffffgfdgdfgdfhffbfffffffffffffffffffffffffffgfdgdfgd
+  sender: Mystic Maggie
+  sender_mailID: luckylife@spamhub.biz
+  subject: Unlock Your Free Fortune Now!
+  message: Claim your destiny today. Press Confirm to receive it.
   risk_level: 1
   category: 1
   moneyEffect: 0

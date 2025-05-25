@@ -18,6 +18,13 @@ public class EmailInboxManager : MonoBehaviour
     [SerializeField] int maxCountInbox = 12;
     private int remainingToSpawn;
 
+    [SerializeField] private EmailPanelText workPanel;
+    [SerializeField] private EmailPanelText scamPanel;
+    [SerializeField] private EmailPanelText spamPanel;
+    [SerializeField] private EmailPanelText salaryPanel;
+    [SerializeField] private EmailPanelText lotteryPanel;
+    [SerializeField] private EmailPanelText virusPanel;
+
     private void Start()
     {
         while (EmailList.Count < maxCountInbox)
@@ -38,6 +45,20 @@ public class EmailInboxManager : MonoBehaviour
             case CategoryEmail.Virus: return VirusEmailPrefab;
 
             default: return defaultprefab;
+        }
+
+    }
+    private EmailPanelText GetPanelForCategory(CategoryEmail category)
+    {
+        switch (category)
+        {
+            case CategoryEmail.Work: return workPanel;
+            case CategoryEmail.Spam: return spamPanel;
+            case CategoryEmail.Scam: return scamPanel;
+            case CategoryEmail.Lottrey: return lotteryPanel;
+            case CategoryEmail.Salary: return salaryPanel;
+            case CategoryEmail.Virus: return virusPanel;
+            default: return null;
         }
 
     }
@@ -72,7 +93,8 @@ public class EmailInboxManager : MonoBehaviour
         EmailCardUI emailCardUI = card.GetComponent<EmailCardUI>();
         if (emailCardUI != null)
         {
-            emailCardUI.Setup(Data);
+            EmailPanelText targetPanel = GetPanelForCategory(Data.category);
+            emailCardUI.Setup(Data, this, targetPanel);
         }
     }
     public void OnEmailDeleted()
@@ -83,15 +105,19 @@ public class EmailInboxManager : MonoBehaviour
     IEnumerator SpawnNewEmailWithDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        yield return null;
-        SpawnOneRandomEmail();
+
+        while (inboxContentPanel.childCount < maxCountInbox && EmailList.Count > 0)
+        {
+            SpawnOneRandomEmail();
+            yield return new WaitForSeconds(0.1f); // Slight delay between spawns (optional)
+        }
     }
     void SpawnOneRandomEmail()
     {
         Debug.Log("Inbox Count: " + inboxContentPanel.childCount);
         if (inboxContentPanel.childCount >= maxCountInbox || EmailList.Count == 0) return;
 
-        EmailData randomEmail = EmailList[Random.Range(0, 5)];
+        EmailData randomEmail = EmailList[Random.Range(0, EmailList.Count)];
         SpawnEmailCard(randomEmail);
     }
 }

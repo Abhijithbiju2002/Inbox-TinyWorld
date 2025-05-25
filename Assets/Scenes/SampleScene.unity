@@ -205,7 +205,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 839431532}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.78077215
+  m_Size: 0.7608481
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -578,7 +578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 1}
+  m_Color: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -757,8 +757,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1566,14 +1566,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b46eed78cecfcea488d4e919cd39ab25, type: 2}
   - {fileID: 11400000, guid: c2e91fb0f53673e4484848ceae54fae1, type: 2}
   inboxContentPanel: {fileID: 872269526}
-  Officebutton: {fileID: 2055701102}
-  spamEmailPrefab: {fileID: 1272297153}
-  scamEmailPrefab: {fileID: 324956939}
-  lotterymailPrefab: {fileID: 1960064017}
-  incomeEmailPrefab: {fileID: 1548451113}
-  VirusEmailPrefab: {fileID: 1700917877}
-  defaultprefab: {fileID: 2055701102}
+  Officebutton: {fileID: 7155531481490575499, guid: 8b63f0fc78953324187ae1f972b6a04d, type: 3}
+  spamEmailPrefab: {fileID: 1625019727796963110, guid: 15d1becca3fbbf64b8ec001e609cfe1d, type: 3}
+  scamEmailPrefab: {fileID: 3766660070681289609, guid: 8bc50c4f2c958644b8eeeb7dabc9db7c, type: 3}
+  lotterymailPrefab: {fileID: 2529332469918731837, guid: 2ea2913e6f85dbf4386038b368dc9b05, type: 3}
+  incomeEmailPrefab: {fileID: 3374894986622719177, guid: e8b5d1a79c6943f4a8c788e6f7fcfc44, type: 3}
+  VirusEmailPrefab: {fileID: 7834086389371630661, guid: 2c5cd0ab3df13704f87acbdd28173f7c, type: 3}
+  defaultprefab: {fileID: 1625019727796963110, guid: 15d1becca3fbbf64b8ec001e609cfe1d, type: 3}
   maxCountInbox: 12
+  workPanel: {fileID: 1089920413}
+  scamPanel: {fileID: 7368433932483220631}
+  spamPanel: {fileID: 2134146109}
+  salaryPanel: {fileID: 1108070437788208598}
+  lotteryPanel: {fileID: 1861352023447247620}
+  virusPanel: {fileID: 873235252173591642}
 --- !u!1 &873087399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,7 +2155,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -54.23999, y: 0}
-  m_SizeDelta: {x: 108.47998, y: 41.75}
+  m_SizeDelta: {x: 108.47998, y: 30.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1178792781
 MonoBehaviour:
@@ -2235,8 +2241,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 47413b1ea3379a64aa7a5f3d6d4e135e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2315,11 +2321,6 @@ MonoBehaviour:
   Elemenets: []
   SearchBar: {fileID: 408042480}
   totalElement: 0
---- !u!1 &1548451113 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3374894986622719177, guid: e8b5d1a79c6943f4a8c788e6f7fcfc44, type: 3}
-  m_PrefabInstance: {fileID: 4049695867131078842}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1548451114 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6643847160592903694, guid: e8b5d1a79c6943f4a8c788e6f7fcfc44, type: 3}
@@ -2942,7 +2943,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807888022236667373, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1807888022236667373, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: m_AnchorMin.x
@@ -2950,7 +2951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807888022236667373, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1807888022236667373, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: m_SizeDelta.x
@@ -2958,7 +2959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807888022236667373, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 289.5
+      value: 293.405
       objectReference: {fileID: 0}
     - target: {fileID: 1807888022236667373, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2994,7 +2995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1807888022236667373, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -154.75
+      value: -156.7025
       objectReference: {fileID: 0}
     - target: {fileID: 1807888022236667373, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3012,9 +3013,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Email panel Spam
       objectReference: {fileID: 0}
-    - target: {fileID: 4298178154708899650, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 5417095650890843567, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417095650890843567, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2134146109}
+    - target: {fileID: 5417095650890843567, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 872269525}
+    - target: {fileID: 5417095650890843567, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DeletePage
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417095650890843567, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5417095650890843567, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EmailPanelText, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7630649868477443096, guid: 99b4677ad46029f4390cd7d1ff7cf813, type: 3}
       propertyPath: linkedEmailCard
@@ -3349,7 +3370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 396896711663362287, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 289.5
+      value: 293.405
       objectReference: {fileID: 0}
     - target: {fileID: 396896711663362287, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3385,7 +3406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 396896711663362287, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -154.75
+      value: -156.7025
       objectReference: {fileID: 0}
     - target: {fileID: 396896711663362287, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3403,10 +3424,38 @@ PrefabInstance:
       propertyPath: linkedEmailCard
       value: 
       objectReference: {fileID: 2055701102}
+    - target: {fileID: 2030688008963843983, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 872269525}
     - target: {fileID: 3879334935898228294, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 872269525}
+    - target: {fileID: 6522510409302945272, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522510409302945272, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522510409302945272, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522510409302945272, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522510409302945272, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6522510409302945272, guid: bbfcb0510ccf4544e9b684c1d4442755, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -7.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3764,10 +3813,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 872269526}
     m_Modifications:
-    - target: {fileID: 430839828565484162, guid: 15d1becca3fbbf64b8ec001e609cfe1d, type: 3}
-      propertyPath: m_text
-      value: Spam Mail
-      objectReference: {fileID: 0}
     - target: {fileID: 1625019727796963110, guid: 15d1becca3fbbf64b8ec001e609cfe1d, type: 3}
       propertyPath: m_Name
       value: Button spam
@@ -3868,12 +3913,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7690263393798401346, guid: 15d1becca3fbbf64b8ec001e609cfe1d, type: 3}
-      propertyPath: m_text
-      value: 'CAN BE A SPAM
-
-'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3898,10 +3937,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1131987826}
     m_Modifications:
+    - target: {fileID: 1893357745090746218, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 872269525}
     - target: {fileID: 4909802850486227215, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 872269525}
+    - target: {fileID: 6494332341319575263, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: linkedEmailCard
+      value: 
+      objectReference: {fileID: 1700917877}
+    - target: {fileID: 6920722181393419137, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920722181393419137, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920722181393419137, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 465
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920722181393419137, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920722181393419137, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 232.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920722181393419137, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3916,7 +3987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_AnchorMin.x
@@ -3924,15 +3995,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 728
+      value: 637
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 334.5
+      value: 293.405
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3964,11 +4035,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 364
+      value: 328.5
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -167.25
+      value: -156.7025
       objectReference: {fileID: 0}
     - target: {fileID: 7425469884655745704, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3985,6 +4056,10 @@ PrefabInstance:
     - target: {fileID: 8171615605249207656, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
       propertyPath: m_Name
       value: 'Virus panel Spam '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171615605249207656, guid: 1ff814be64ed41849be9a865f7e06512, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4007,6 +4082,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Lottery panel Spam '
       objectReference: {fileID: 0}
+    - target: {fileID: 2479340917459597368, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481657527697488764, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 872269525}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4021,7 +4104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_AnchorMin.x
@@ -4029,15 +4112,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 728
+      value: 637
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 334.5
+      value: 293.405
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4069,11 +4152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 364
+      value: 328.5
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -167.25
+      value: -156.7025
       objectReference: {fileID: 0}
     - target: {fileID: 6704330067484541525, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4087,6 +4170,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8412283395912880105, guid: 60802e467f8fb704f96c1b8fdfeb83be, type: 3}
+      propertyPath: linkedEmailCard
+      value: 
+      objectReference: {fileID: 1960064017}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4213,6 +4300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Income panel Spam '
       objectReference: {fileID: 0}
+    - target: {fileID: 513247238823254383, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 733683233379553516, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -4243,11 +4334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3039110377362493063, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 637
       objectReference: {fileID: 0}
     - target: {fileID: 3039110377362493063, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 169.75
+      value: 293.405
       objectReference: {fileID: 0}
     - target: {fileID: 3039110377362493063, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4279,11 +4370,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3039110377362493063, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 328.5
       objectReference: {fileID: 0}
     - target: {fileID: 3039110377362493063, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -84.875
+      value: -156.7025
       objectReference: {fileID: 0}
     - target: {fileID: 3039110377362493063, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4297,6 +4388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5866048563569424092, guid: 80ae9f28ade351343a2419a28b2f3545, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 872269525}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
