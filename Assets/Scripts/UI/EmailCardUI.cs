@@ -38,6 +38,7 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
             contentRoot.SetActive(false);
         }
         OpenEmail();
+        UpdateVisual();
 
     }
     void OpenEmail()

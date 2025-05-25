@@ -91,7 +91,7 @@ public class EmailInboxManager : MonoBehaviour
         Debug.Log("Inbox Count: " + inboxContentPanel.childCount);
         if (inboxContentPanel.childCount >= maxCountInbox || EmailList.Count == 0) return;
 
-        EmailData randomEmail = EmailList[Random.Range(0, EmailList.Count)];
+        EmailData randomEmail = EmailList[Random.Range(0, 5)];
         SpawnEmailCard(randomEmail);
     }
 }
