@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sender: Project Manager
   sender_mailID: reports@company.com
-  subject: Monthly Report Submission
+  subject: Daily Report Submission
   message: We need your report by EOD. Press Confirm to receive it.
   risk_level: 2
   category: 0

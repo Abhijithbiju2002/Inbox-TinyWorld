@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sender: HR Department
   sender_mailID: payroll@company.com
-  subject: Your Monthly Salary Slip
+  subject: Your Weekly Salary Slip
   message: Your payment has been processed. Press Confirm to receive it.
   risk_level: 2
   category: 4

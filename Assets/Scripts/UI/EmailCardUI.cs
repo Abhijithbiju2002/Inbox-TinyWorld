@@ -40,6 +40,10 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
         {
             contentRoot.SetActive(false);
         }
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayClick();
+        }
         OpenEmail();
         UpdateVisual();
 
