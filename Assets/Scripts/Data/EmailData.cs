@@ -16,6 +16,7 @@ public class EmailData : ScriptableObject
     public int moneyEffect;
     public int moralEffect;
     public bool cointansVirus;
+    public bool isConfrimed = false;
 
     public string GetMessage()
     {

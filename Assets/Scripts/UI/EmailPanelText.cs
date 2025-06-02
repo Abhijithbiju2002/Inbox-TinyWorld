@@ -18,12 +18,18 @@ public class EmailPanelText : MonoBehaviour
     [SerializeField] GameObject miniRewardPanel;
     [SerializeField] TextMeshProUGUI miniRewardText;
 
+    EmailCardUI emailui;
+
     public void Initialize(EmailInboxManager manager, GameObject card)
     {
         inboxManager = manager;
         linkedEmailCard = card;
+        emailui = linkedEmailCard.GetComponent<EmailCardUI>();
 
+        deleteButton.onClick.RemoveAllListeners();
         deleteButton.onClick.AddListener(DeletePage);
+
+        confrim_button.onClick.RemoveAllListeners();
         confrim_button.onClick.AddListener(ConfrimButton);
     }
 
@@ -35,7 +41,12 @@ public class EmailPanelText : MonoBehaviour
         subjectText.text = data.GetSubject();
         senderMailId.text = data.GetSenderMailId();
         senderMessage.text = data.GetMessage();
-        linkedEmailCard = null;
+        //linkedEmailCard = null;
+        if (emailData == null)
+        {
+            Debug.LogError("Email data is null in ConfirmButton!");
+            return;
+        }
         gameObject.SetActive(true);
     }
     public void closepanel()
@@ -133,3 +144,4 @@ public class EmailPanelText : MonoBehaviour
         miniRewardPanel.SetActive(false);
     }
 }
+

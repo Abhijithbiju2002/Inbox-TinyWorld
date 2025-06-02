@@ -15,7 +15,7 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
     [SerializeField] EmailPanelText emailPanel;
     [SerializeField] EmailInboxManager inboxManager;
 
-    bool isOpened = false;
+    public bool isOpened = false;
 
     //[SerializeField] Button EmailButton;
 
@@ -51,6 +51,10 @@ public class EmailCardUI : MonoBehaviour, IPointerClickHandler
     void OpenEmail()
     {
         isOpened = true;
+        if (inboxManager != null)
+        {
+            inboxManager.HideAllPanels();
+        }
         if (emailPanel != null)
         {
             emailPanel.ShowEmail(emailData);

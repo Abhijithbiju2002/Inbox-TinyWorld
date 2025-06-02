@@ -120,4 +120,13 @@ public class EmailInboxManager : MonoBehaviour
         EmailData randomEmail = EmailList[Random.Range(0, EmailList.Count)];
         SpawnEmailCard(randomEmail);
     }
+    public void HideAllPanels()
+    {
+        workPanel.gameObject.SetActive(false);
+        spamPanel.gameObject.SetActive(false);
+        scamPanel.gameObject.SetActive(false);
+        salaryPanel.gameObject.SetActive(false);
+        lotteryPanel.gameObject.SetActive(false);
+        virusPanel.gameObject.SetActive(false);
+    }
 }
